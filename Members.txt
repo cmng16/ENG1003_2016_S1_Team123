@@ -1,9 +1,13 @@
+here is an example file as a comparison point
+
+we will make some edits (here's another) and see the conflicts that we get
+
 LIST OF MEMBERS FOR TEAM 123
 
-CHANTELL NG
+name1
 
-DIANNE SHEN
+name1
 
-EDWIN CHAO
+name1
 
-JUSTIN GREEN
+name1
