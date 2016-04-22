@@ -4,9 +4,9 @@ we will make some edits (here's another) and see the conflicts that we get
 
 LIST OF MEMBERS FOR TEAM 123
 
-name1
+JUSTIN GREEN
 
-name1
+
 
 name1
 
