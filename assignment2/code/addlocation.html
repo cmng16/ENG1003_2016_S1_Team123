@@ -31,21 +31,23 @@
 
               </div>
             </div>
-              <label>Location:<input type="text"></label>
-              <input type = "button" id="addLocation" style="border:1px solid #000" value="Add Location"/>
+              <!--this section is used to code for the buttons and the text used for the search of the added location-->
+              <label>Location:<input id = "location" type="text"></label>
+              <button id = "addLocation" type = "button" onClick = "addLocation()">Add Location</button>
               <br/><br/>
-              <label>Nickname:<input type="text"></label>
+              <label>Nickname:<input id ="nickname" type="text"></label>
               <br/><br/>
+              <!--this script is used to insert the interactive map below the search function above-->
               <script src="http://maps.googleapis.com/maps/api/js"></script>
                 <script>
                 function initialize() {
                   var mapProp = {
-                    center:new google.maps.LatLng(-37.912,145.131),
-                    zoom:15,
-                    mapTypeId:google.maps.MapTypeId.ROADMAP
-                  };
-                  var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
-                }
+                        center:new google.maps.LatLng(-37.912,145.131),
+                        zoom:15,
+                        mapTypeId:google.maps.MapTypeId.ROADMAP
+                        };
+                    var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+                    }
                 google.maps.event.addDomListener(window, 'load', initialize);
                 </script>
                   <div id="googleMap" style="width:500px;height:380px;">
