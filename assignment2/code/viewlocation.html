@@ -30,10 +30,34 @@
             <div class="content-grid mdl-grid">
               <div class="mdl-cell">
                 <!--   Main page content here:   -->  
-                
-              
+                 <script src="http://maps.googleapis.com/maps/api/js"></script>
+                <script>
+                function initialize() {
+                  var mapProp = {
+                        center:new google.maps.LatLng(-37.912,145.131),
+                      //the lastitude and longitute needs to be changed so its linked the the geocode function
+                        zoom:15,
+                        mapTypeId:google.maps.MapTypeId.ROADMAP
+                        };
+                    var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+                    };
+                google.maps.event.addDomListener(window, 'load', initialize);
+                </script>
+                  <div id="googleMap" style="width:500px;height:380px;">
+                  </div>
               </div>
             </div>
+              <div>
+                  <!--this section contains the headers for the oputput data required on each data piece that is required to be outputted-->
+              <h4>Location:</h4>
+                  <label id="locationOutput"></label>
+              <h4>Date:</h4>
+                  <label id="dateOutput"></label>
+              <h4>Weather:</h4>
+                  <label id="weatherOutput"></label>
+              </div>
+              <!--this button links up to a function which deletes the current location-->
+               <button id = "removeLocation" type = "button" onClick = "removeLocation()" "removeLocation">Remove Location</button>
           </main>    
         </div>
 
