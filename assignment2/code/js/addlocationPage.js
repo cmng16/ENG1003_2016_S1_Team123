@@ -70,9 +70,3 @@ function addCurrentLocation()
  
 // Give maps API time to load, then initialise map.
 setTimeout(initMap, 1000);
-// code used to delete the location
-
-function removeLocation()
-{
-    
-};

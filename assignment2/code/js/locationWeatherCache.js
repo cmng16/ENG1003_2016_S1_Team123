@@ -38,6 +38,7 @@ function LocationWeatherCache()
     // Returns the number of locations stored in the cache.
     //
     this.length = function() {
+        return locations.length
     };
     
     // Returns the location object for a given index.
@@ -52,6 +53,7 @@ function LocationWeatherCache()
     //
     this.addLocation = function(latitude, longitude, nickname)
     {
+        
     }
 
     // Removes the saved location at the given index.
@@ -112,11 +114,13 @@ function LocationWeatherCache()
 //
 function loadLocations()
 {
+    
 }
 
 // Save the singleton locationWeatherCache to Local Storage.
 //
 function saveLocations()
 {
+    
 }
 
